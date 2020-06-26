@@ -1,0 +1,15 @@
+{
+    "name": "yudi/parallel",
+    "authors": [
+        {
+            "name": "danielyudicarvalho",
+            "email": "danielyudicarvalho@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "webchat\\": "src/"
+        }
+    }
+}

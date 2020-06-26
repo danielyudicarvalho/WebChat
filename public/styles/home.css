@@ -1,0 +1,127 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62%;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;  
+}
+
+.container-wrap{
+  border-radius:10px;
+  background-image: linear-gradient(to left, #fe8c00,#f83600 );
+  width:800px;
+  height: 800px;
+  padding:1rem;
+  position: absolute;
+  top:80px;
+  min-width: 450px;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+.container-title{
+  display: inline;
+  position: relative;
+  bottom:90px;
+}
+
+.form-div{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.form-div h2{
+  font-weight: bold;
+  color: orange;
+  margin-top: 8px;
+  
+}
+
+form{
+  width:360px;
+  height: 360px;
+  font-size: 2rem;
+}
+
+.form-div .input-div{
+  display: grid;
+  grid-template-columns: 7% 93%;
+  position: relative;
+  border-bottom: 2px solid orange;
+  margin: 25px 0;
+  padding: 5px 0;
+}
+
+.input-div input{
+  background: none;
+  outline: none;
+  border:none;
+  color: orange;
+  width:100%;
+  height: 100%;
+  margin:0;
+  padding: 1rem;
+  position: relative;
+  top:0;
+  left:0;
+}
+
+.button-div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-div > button{
+  background-image: linear-gradient(to left, #fe8c00,#f83600);
+  margin-top: 8px;
+  width:33%;
+  height: 30px;
+  border-radius:8px;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+img{
+  height:100px ;
+}
+
+.title{
+  color:orange;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px){
+  .container-wrap{
+    width:50%;
+  }
+}
+
+@media only screen and (max-width: 320px){
+  .button-div > button{
+    display: block;
+  }
+
+}
