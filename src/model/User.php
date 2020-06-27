@@ -1,7 +1,7 @@
 <?php
 namespace webchat\model;
 
-use webchat\config\Connection;
+use webchat\infra\config\Connection;
 
 
 class User{
@@ -103,6 +103,7 @@ class User{
     }
 
     return $users;
+    $connection = null;
   }
 
 }

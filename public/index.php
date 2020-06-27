@@ -1,9 +1,9 @@
 <?php
 
 require '../vendor/autoload.php';
-use webchat\config\Connection;
+use webchat\infra\config\Connection;
 
 Connection::createTables();
 
-new webchat\Routes;
+new webchat\infra\Routes;
 ?>

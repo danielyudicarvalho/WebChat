@@ -1,7 +1,7 @@
 <?php
 
 
-namespace webchat;
+namespace webchat\infra;
 
 class Routes{
 

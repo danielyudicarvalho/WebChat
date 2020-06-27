@@ -3,7 +3,7 @@
 
 namespace webchat\model;
 
-use webchat\config\Connection;
+use webchat\infra\config\Connection;
 
 class Message{
 
@@ -15,8 +15,6 @@ class Message{
   public function __construct(){
     $this->db = Connection::getConnection();
   }
-
-
 
   public function setName($data){
     $this->name = $data;

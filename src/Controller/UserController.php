@@ -17,7 +17,7 @@ class UserController{
     $user->setName($_POST['name']);
     $user->setPassword($_POST['password']);
     
-    if($_POST['login'] == 'signIn'){
+    if($_POST['login'] == 'signUp'){
       if($user->findOne()){
         header('Location:entry.phtml?alert=userCreated');
       }else{
@@ -28,7 +28,7 @@ class UserController{
         $users = $user->findAll();
         require '../src/views/main.php';
       }
-    }else if($_POST['login'] == 'signUp'){
+    }else if($_POST['login'] == 'signIn'){
       if($user->auth()){
         session_start();
         $_SESSION['user'] = $_POST['name'];

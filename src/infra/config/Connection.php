@@ -2,7 +2,7 @@
 
 
 
-namespace webchat\config;
+namespace webchat\infra\config;
 
 class Connection {
   private static $db;
@@ -11,7 +11,7 @@ class Connection {
 
     try{
 
-      $conn = new \PDO("sqlite:../src/database/database.db");
+      $conn = new \PDO("sqlite:../src/infra/database/database.db");
       $conn->setAttribute(\PDO::ATTR_ERRMODE,\PDO::ERRMODE_EXCEPTION);
       self::$db = $conn;
       return self::$db;

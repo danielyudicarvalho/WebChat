@@ -64,6 +64,7 @@
 
   .messages-container{
     padding:0.5rem;
+
   }
 
 
@@ -73,14 +74,15 @@
     height:100%;
     padding:1.5rem;
     border-radius:25px;
+    overflow:auto;
   }
 
   .box-messages{
     background:black;
     width:100%;
-    height:100%;
+    height:800px;
     border-radius:20px;
-    overflow:auto;
+    overflow:auto;    
   }
 
   .messages{
@@ -99,7 +101,7 @@
   }
 
   .messages > p {
-
+    font-size:2rem
   }
 
   .input-container{
@@ -127,6 +129,7 @@
     font-weight:bold;
     color:black;
     background-image:linear-gradient(to left, #fe8c00,#f83600);
+    border-radius:25px;
   }
 
 </style>
@@ -145,14 +148,7 @@
   <div class="messages-container">
     <div class="box-wrap">
       <div class="box-messages">
-        <div class="messages">
-          <h2>Pessoa</h2>
-          <p>Mensagem</p>
-        </div>
-        <div class="messages">
-          <h2>Pessoa</h2>
-          <p>Mensagem</p>
-        </div>
+        
       </div>
     </div>
 
@@ -191,6 +187,7 @@
             }
           }
         })
+        $(".box-messages").animate({ scrollTop: $('.box-messages').prop("scrollHeight")}, 1000);
       }
       
       $('.message').keypress(function(event){
@@ -211,7 +208,7 @@
 
       setInterval(function(){
         receiveMessage();
-      }, 3000);
+      }, 2000);
     })
   </script>
 </body>
