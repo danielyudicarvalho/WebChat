@@ -187,7 +187,7 @@
             }
           }
         })
-        $(".box-messages").animate({ scrollTop: $('.box-messages').prop("scrollHeight")}, 1000);
+        
       }
       
       $('.message').keypress(function(event){
@@ -203,12 +203,13 @@
 
           $('.message').val(" ");
           receiveMessage();
+          $(".box-messages").animate({ scrollTop: $('.box-messages').prop("scrollHeight")}, 1000);
         };
       });
 
       setInterval(function(){
         receiveMessage();
-      }, 2000);
+      },4000);
     })
   </script>
 </body>
