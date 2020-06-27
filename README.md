@@ -1,10 +1,10 @@
-# WebChat
+# Parallax
 
 <!--- Exemplos de badges. Acesse https://shields.io para outras opções. Você pode querer incluir informações de dependencias, build, testes, licença, etc. --->
 ![GitHub repo size](https://img.shields.io/github/repo-size/hsborges/progweb-template)
 ![GitHub contributors](https://img.shields.io/github/contributors/hsborges/progweb-template)
 
-WebChat é um mensageiro online que permite trocar mensagens online entre usuarios cadastrados.
+Parallax é um mensageiro online que permite trocar mensagens online entre usuarios cadastrados.
 
 Após se cadastrar, o usuário é levado para a página principal onde é possivel escrever e receber mensagens.
 Se já for cadastrado, o usuário precisa apenas se autentificar na aplicação.
@@ -35,15 +35,15 @@ Linux/macOS/Windows:
 
 ## Usando WebChat
 
-Para usar o WebChat é bem simples, siga os seguintes passos:
+Para usar o Parallax é bem simples, siga os seguintes passos:
 
 * Abra o navegador e digite o seguinte endereço: `http://localhost/8080`
 * Ao abrir a aplicação você poderá:
   * Realizar o signUp para se cadastrar, ou...
   * Entrar com usuário e senha no e clicar SignIn se já estiver registrado
 * Após se autentificar, será redirecionado para a página principal onde terá um campo de mensagens recebidas,
-  um campo de text para escrever mensagens e, ao lado, uma lista de usuários logados.
-* Para enviar uma mensagem basta apenas escrever o que deseja no campo e clicar Enter e sua mensagem aparecerá no campo
+  um campo de texto para escrever mensagens e, ao lado, uma lista de usuários logados.
+* Para enviar uma mensagem basta apenas escrever o que deseja no campo e clicar `Enter` e sua mensagem aparecerá no campo
   junto das outras mensagens.
 * Para sair basta clicar em logout.
 
