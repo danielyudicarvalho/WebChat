@@ -19,7 +19,7 @@ class UserController{
     
     if($_POST['login'] == 'signUp'){
       if($user->findOne()){
-        header('Location:entry.phtml?alert=userCreated');
+        header('Location: /?alert=userCreated');
       }else{
         $user->createUser();
         session_start();
@@ -36,7 +36,7 @@ class UserController{
         $users = $user->findAll();
         require '../src/views/main.php';
       }else{
-        header('Location:entry.phtml');
+        header('Location: /?alert=wrongRegister');
       }
     }
     

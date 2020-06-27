@@ -26,6 +26,22 @@ body{
   min-width: 450px;
 }
 
+.alert{
+  position: absolute;
+  left:50px;
+  top:80px;
+  width:200px;
+  height: 120px;
+  background-image: linear-gradient(to left,#fe8c00, #f83600);
+  font-weight: bold;
+  font-size: 2rem;
+  display: flex;
+  place-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 25px;
+}
+
 .container{
   width: 100%;
   height: 100%;

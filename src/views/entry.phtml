@@ -3,6 +3,35 @@
 include_once('header.phtml');
 
 ?>
+
+
+<?php
+
+  if(!empty($_REQUEST['alert'])){
+?>
+
+<div class="alert">
+    <?php 
+      switch( $_REQUEST['alert']){
+
+        case 'userCreated':
+          echo "Usuario já registrado";
+        break;
+
+        case 'wrongRegister':
+          echo 'usuario ou senha incorreto(s)';
+        break;
+
+        case 'unlogged':
+          echo 'Registre-se ou cadastre-se antes';
+        break;
+
+      }
+    
+    ?>
+</div>
+  <?php } ?>
+  
 <div class="container-wrap">
   <div class="container">
 
@@ -46,8 +75,8 @@ include_once('header.phtml');
           </div>
           
           <div class="button-div">
-            <button name="login" value='signIn'>SignUp</button>
-            <button name="login" value='signUp'>SignIn</button>
+            <button name="login" value='signUp'>SignUp</button>
+            <button name="login" value='signIn'>SignIn</button>
           </div>
 
       </form>
