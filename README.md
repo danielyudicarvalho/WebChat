@@ -1,4 +1,4 @@
-# Parallax
+# WebChat
 
 <!--- Exemplos de badges. Acesse https://shields.io para outras opções. Você pode querer incluir informações de dependencias, build, testes, licença, etc. --->
 ![GitHub repo size](https://img.shields.io/github/repo-size/hsborges/progweb-template)
@@ -27,11 +27,11 @@ Linux/macOS/Windows:
 
 * Depois de se certificar de cumprir os pré-requisitos acesse https://github.com/danielyudicarvalho/webchat
 * Crie um diretorio vazio qualquer em sua máquina
-* No diretorio envie o comando <git clone https://github.com/danielyudicarvalho/webchat.git> pelo terminal
-* Uma vez com o projeto clonado na propria máquina, abra o terminal no diretorio e envie o comando <composer install> para instalar todas as dependencias
-* Ainda no terminal, no diretorio, envie o comando <composer dumpautoload> para configurar o autoload do composer PHP
-* Para rodar a aplicação em versão de teste, envie o comando <php -S localhost:8080 -t public> no terminal no diretorio do projeto
-* Abra o navegador e acesse a URL <localhost:8080>
+* No diretorio envie o comando `git clone https://github.com/danielyudicarvalho/webchat.git` pelo terminal
+* Uma vez com o projeto clonado na propria máquina, abra o terminal no diretorio e envie o comando `composer install` para instalar todas as dependencias
+* Ainda no terminal, no diretorio, envie o comando `composer dumpautoload` para configurar o autoload do composer PHP
+* Para rodar a aplicação em versão de teste, envie o comando `php -S localhost:8080 -t public` no terminal no diretorio do projeto
+* Abra o navegador e acesse a URL `localhost:8080`
 
 ## Usando WebChat
 
