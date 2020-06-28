@@ -1,6 +1,6 @@
 
 <?php
-  if(empty($_SESSION['user'])){
+  if(!isset($_SESSION['user'])){
     header('Location /?unlogged');
   }
 ?>
@@ -15,6 +15,8 @@
   integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
   crossorigin="anonymous">
   </script>
+  <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&family=Orbitron:wght@800&display=swap" 
+  rel="stylesheet">
 </head>
 <style>
 
@@ -32,6 +34,7 @@
     justify-content:center;
     align-items:center;
     background: black;
+    font-family: 'MuseoModerno', cursive;
   }
   .container{
     position:relative;
@@ -116,7 +119,7 @@
 
   .messages{
     width:30%;
-    height:50px;
+    height:80px;
     background-image:linear-gradient(to left, #fe8c00,#f83600);
     color:black;
     border-radius:8px;
@@ -126,7 +129,7 @@
   }
 
   .messages > h1{
-
+    font-family:
   }
 
   .messages > p {

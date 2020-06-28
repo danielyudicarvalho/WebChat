@@ -13,6 +13,8 @@ body{
   align-items: center;
   justify-content: center;
   background: black;  
+  font-family: 'MuseoModerno', cursive;
+  
 }
 
 .container-wrap{
@@ -109,7 +111,20 @@ form{
   justify-content: space-between;
 }
 
-.button-div > button:hover{
+.button-div > button:hover, button:focus{
+  border:1px orange solid;
+  background-color: black;
+  color:orange;
+  width:40%;
+  height:40px;
+  border:none;
+  outline:none;
+  border-radius:8px;
+  background-image:none;
+  font-weight: bold;
+}
+
+.button-div > button:focus{
   border:1px orange solid;
   background-color: black;
   color:orange;
