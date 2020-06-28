@@ -12,6 +12,11 @@ class UserController{
     require '../src/views/entry.phtml';
   }
 
+  public function logoutUser(){
+    session_destroy();
+    header('Location:/');
+  }
+
   public function createUser(){
     $user = new User();
     $user->setName($_POST['name']);

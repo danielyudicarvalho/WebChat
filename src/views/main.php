@@ -9,7 +9,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Parallax</title>
+  <title>Parallel</title>
   <script
   src="https://code.jquery.com/jquery-3.5.1.min.js"
   integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
@@ -42,6 +42,30 @@
     background:black;
     height:800px;
     width:80vw;
+  }
+
+  .logout-button{
+    background-image: linear-gradient(to left, #fe8c00,#f83600);
+    display: inline-block;
+    width:100px;
+    height:30px;
+    border-radius:8px;
+    cursor:pointer;
+    text-align:center;
+    margin-left:30px;
+    font-size:2rem;
+    font-weight:bold;
+    text-decoration:none;
+    outline:none;
+    color:black;
+  }
+
+  .logout-button:hover{
+    background-image:none;
+    border:none;
+    color:orange;
+    background:black;
+
   }
 
   .users-container{
@@ -163,6 +187,8 @@
   </div>
         <input id="user"  type="hidden" readonly value=<?= $_SESSION['user']?>>
 </div>
+
+<a class="logout-button" href="logout">logout</a>
   
 
   <script>

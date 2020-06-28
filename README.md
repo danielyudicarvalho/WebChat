@@ -1,10 +1,10 @@
-# Parallax
+# Parallel
 
 <!--- Exemplos de badges. Acesse https://shields.io para outras opções. Você pode querer incluir informações de dependencias, build, testes, licença, etc. --->
 ![GitHub repo size](https://img.shields.io/github/repo-size/hsborges/progweb-template)
 ![GitHub contributors](https://img.shields.io/github/contributors/hsborges/progweb-template)
 
-Parallax é um mensageiro online que permite trocar mensagens online entre usuarios cadastrados.
+Parallel é um mensageiro online que permite trocar mensagens online entre usuarios cadastrados.
 
 Após se cadastrar, o usuário é levado para a página principal onde é possivel escrever e receber mensagens.
 Se já for cadastrado, o usuário precisa apenas se autentificar na aplicação.
@@ -33,9 +33,9 @@ Linux/macOS/Windows:
 * Para rodar a aplicação em versão de teste, envie o comando `php -S localhost:8080 -t public` no terminal no diretorio do projeto
 * Abra o navegador e acesse a URL `localhost:8080`
 
-## Usando WebChat
+## Usando o Parallel
 
-Para usar o Parallax é bem simples, siga os seguintes passos:
+Para usar o Parallel é bem simples, siga os seguintes passos:
 
 * Abra o navegador e digite o seguinte endereço: `http://localhost/8080`
 * Ao abrir a aplicação você poderá:

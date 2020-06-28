@@ -31,6 +31,12 @@ class Routes{
       'action'=>'index'
     );
 
+    $route['logout'] = Array(
+      'path'=>'/logout',
+      'controller'=>'userController',
+      'action'=>'logoutUser'
+    );
+
     $route['enter'] = Array(
       'path'=>'/enter',
       'controller'=>'userController',
@@ -55,6 +61,7 @@ class Routes{
       'controller'=>'testMessageController',
       'action'=>'sendMessage'
     );
+
 
     $this->setRoutes($route);
   }
