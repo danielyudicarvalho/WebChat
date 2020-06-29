@@ -29,7 +29,8 @@ class Connection {
     $query = '
         CREATE TABLE IF NOT EXISTS users(
           name VARCHAR(200) NOT NULL,
-          password VARCHAR(200) NOT NULL
+          password VARCHAR(200) NOT NULL,
+          status BOOLEAN DEFAULT TRUE
         )
     ';
 

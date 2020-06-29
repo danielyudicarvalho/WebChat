@@ -8,6 +8,7 @@ class User{
 
   private $name;
   private $password;
+  private $status = false;
   private $db;
 
   public function __construct(){
@@ -89,6 +90,22 @@ class User{
 
   }
 
+  public function setStatusOn(){
+    $query = '
+      UPDATE users SET status = true WHERE name = " '.$this->getName().'"
+    ';
+
+    $result = $this->db->exec($query);
+  }
+
+  public function setStatusOff(){
+    $query = '
+      UPDATE users SET status = false WHERE name = "'.$this->getName().'"
+    ';
+
+    $result = $this->db->exec($query);
+  }
+
   public function findAll(){
 
     $query = '
@@ -99,7 +116,10 @@ class User{
     $users = [];
 
     while($rows = $stmt->fetch(\PDO::FETCH_ASSOC)){
-      $users[] = $rows['name'];
+      if($rows['status']){
+        $users[] = $rows['name'];
+      }
+      
     }
 
     return $users;

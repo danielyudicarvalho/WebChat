@@ -14,6 +14,9 @@ class UserController{
 
   public function logoutUser(){
     session_destroy();
+    $user = new User();
+    $user->setName($_POST['name']);
+    $user->setStatusOff();
     header('Location:/');
   }
 
@@ -27,6 +30,7 @@ class UserController{
         header('Location: /?alert=userCreated');
       }else{
         $user->createUser();
+        $user->setStatusOn();
         session_start();
         $_SESSION['user'] = $user->getName();
         $users = [];
@@ -36,6 +40,7 @@ class UserController{
     }else if($_POST['login'] == 'signIn'){
       if($user->auth()){
         session_start();
+        $user->setStatusOn();
         $_SESSION['user'] = $_POST['name'];
         $users = [];
         $users = $user->findAll();

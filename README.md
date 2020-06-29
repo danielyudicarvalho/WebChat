@@ -60,4 +60,4 @@ As seguintes pessoas contribuiram para este projeto:
 ## Licença de uso
 
 
-Este projeto usa a seguinte licença: [GPL](https://www.gnu.org/licenses/gpl-3.0.pt-br.html).
+Este projeto usa a seguinte licença: [MIT](https://opensource.org/licenses/MIT).

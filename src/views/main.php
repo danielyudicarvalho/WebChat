@@ -68,7 +68,23 @@
     border:none;
     color:orange;
     background:black;
+    cursor:pointer;
 
+  }
+
+  .logout-button > button{
+    background:none;
+    outline:none;
+    text-decoration:none;
+    border:none;
+    width:100%;
+    height:100%;
+    color:black;
+  }
+
+  .logout-button > button:hover{
+    cursor:pointer;
+    color:orange
   }
 
   .users-container{
@@ -169,11 +185,13 @@
 
 <div class="container">
   <div class="users-container">
-    <?php foreach($users as $user){?>
+    <?php foreach($users as $user){
+      if($user !== $_SESSION['user']){
+    ?>
       <div class="users-box">
           <h3 class="users"><?= $user?></h3>
       </div>
-    <?php } ?> 
+    <?php }} ?> 
 
   </div>
 
@@ -188,10 +206,13 @@
       <input class="message" type="text" placeholder="messages">    
     </div>
   </div>
-        <input id="user"  type="hidden" readonly value=<?= $_SESSION['user']?>>
+        
 </div>
 
-<a class="logout-button" href="logout">logout</a>
+<form class="logout-button" action="logout" method="post">
+  <input id="user" name="user" type="hidden" readonly value=<?= $_SESSION['user']?>>
+  <button type="submit">logout</button>
+</form>
   
 
   <script>
